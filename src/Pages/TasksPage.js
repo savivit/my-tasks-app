@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap'
-import TasksNavbar from '../components/RecipeNavbar';
+import TasksNavbar from '../Components/TasksNavbar';
 
 class TasksPage extends Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
 
 class TasksNavbar extends Component {

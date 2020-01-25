@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
-import TasksNavbar from '../components/TasksNavbar';
+import TasksNavbar from '../Components/TasksNavbar';
 import { Jumbotron, Button } from 'react-bootstrap';
 
 class HomePage extends Component {
@@ -23,7 +23,7 @@ class HomePage extends Component {
                     <p>
                         <Button variant="success" href="#/login">Login</Button>
                     </p>
-                </Jumbotron>            
+                </Jumbotron>
             </div>
         );
     }

@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import TasksPage from './pages/TasksPage';
+import LoginPage from './Pages/LoginPage';
+import TasksPage from './Pages/TasksPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import jsonUsers from "./data/Users";
+import jsonUsers from "./Data/Users";
 
 class App extends React.Component {
 
