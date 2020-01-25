@@ -3,6 +3,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage';
 import LoginPage from './Pages/LoginPage';
+import SigninPage from './Pages/SigninPage';
 import TasksPage from './Pages/TasksPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import jsonUsers from "./Data/Users";
@@ -21,6 +22,13 @@ class App extends React.Component {
     }
 
     this.handleLogout = this.handleLogout.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
+  }
+
+  handleLogin(user) {
+    this.setState({
+      activeUser: user
+    });
   }
 
   handleLogout() {
@@ -43,6 +51,9 @@ class App extends React.Component {
         </Route>
         <Route exact path="/login">
           <LoginPage allUsers={allUsers} handleLogin={this.handleLogin} />
+        </Route>
+        <Route exact path="/signin">
+          <SigninPage allUsers={allUsers} handleLogin={this.handleLogin} />
         </Route>
         <Route exact path="/tasks">
           <TasksPage activeUser={activeUser} handleLogout={this.handleLogout} />

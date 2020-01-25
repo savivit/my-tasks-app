@@ -40,21 +40,21 @@ class TasksNavbar extends Component {
         }
 
         const tasksLink = activeUser ? <Nav.Link href="#/tasks">Tasks</Nav.Link> : null;
-        const signupLink = !activeUser ? <Nav.Link href="#/signup">Signup</Nav.Link> : null;
+        const signinLink = !activeUser ? <Nav.Link href="#/signin">Signin</Nav.Link> : null;
         const loginLink = !activeUser ? <Nav.Link href="#/login">Login</Nav.Link> : null;
         const logoutLink = activeUser ? <Nav.Link onClick={this.logout}>Logout</Nav.Link> : null;
 
 
         return (
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#/">Recipe Book</Navbar.Brand>
+                <Navbar.Brand href="#/">Tasks App</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         {tasksLink}
                     </Nav>
                     <Nav className="ml-auto">
-                        {signupLink}
+                        {signinLink}
                         {loginLink}
                         {logoutLink}
                     </Nav>
